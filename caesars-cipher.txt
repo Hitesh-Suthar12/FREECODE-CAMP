@@ -1,0 +1,21 @@
+function rot13(str) {
+  const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  let decodedStr = "";
+
+  for (let i = 0; i < str.length; i++) {
+    const char = str[i];
+    const index = alphabet.indexOf(char);
+
+    if (index === -1) {
+      // Character is not in the alphabet
+      decodedStr += char;
+    } else {
+      // Decode the character
+      const decodedIndex = (index + 13) % 26;
+      decodedStr += alphabet[decodedIndex];
+    }
+  }
+
+  return decodedStr;
+}
+rot13("SERR PBQR PNZC");

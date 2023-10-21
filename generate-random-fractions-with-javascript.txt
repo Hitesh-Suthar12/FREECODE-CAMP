@@ -1,0 +1,12 @@
+function randomFraction() {
+
+  // Only change code below this line
+let a = 0;
+while(a === 0)
+{
+  a = Math.random();
+}
+  return a;
+
+  // Only change code above this line
+}

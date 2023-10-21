@@ -1,0 +1,16 @@
+function Dog(name) {
+  this.name = name;
+}
+
+Dog.prototype = {
+  // Only change code below this line
+  eat: function() {
+    console.log("mou mou");
+  },
+  describe:function() {
+    console.log("My Name Is " + this.name);
+  },
+  numLegs:function() {
+    console.log(2);
+  }
+};
